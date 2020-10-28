@@ -1,5 +1,3 @@
-console.log('app.js is running!');
-
 
 const weatherForm = document.querySelector('form');
 
