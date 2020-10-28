@@ -10,7 +10,7 @@ const geocode = (address, callback) => {
         if (err) {
             callback('Unable to log to the mapBox service!', undefined)
         } else if (body.message) {
-            callback('Location not found. Please try again!', undefined);
+            callback('Unable to find the location please try again.', undefined);
         } else if (body.features.length) {
             const features = body.features[0];
             callback(undefined,
